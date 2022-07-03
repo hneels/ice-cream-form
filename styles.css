@@ -1,0 +1,104 @@
+/*
+CS601 Assignment 4
+Author: Hope Asher
+*/
+
+/* color palette */
+:root {
+    --ginger: #fff3b0;
+    --jet: #2C2A25;
+    --red: #e63946;
+    --white: #f1faee;
+    --grayblue: #457b9d;
+}
+
+/* custom font */
+@font-face {
+    font-family: "Quicksand";
+    src: url("Quicksand.otf");
+}
+
+/* these styles are overridden below for mobile screens */
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--jet);
+    display: flex;
+    justify-content: flex-end;
+    font-family: Quicksand, sans-serif;
+}
+
+main {
+    background-color: var(--white);
+    border: .5px solid var(--grayblue);
+    border-radius: 5px;
+    margin: 5% 20% auto auto;
+}
+
+/* heading and validation error message */
+h1, #warning {
+    color: var(--red);
+    margin: 1rem;
+}
+
+/* text inputs that fail validation */
+.invalid {
+    border: 2px inset var(--red);
+}
+
+/* all inputs including button */
+input {
+    font-family: inherit;
+}
+
+/* text fields */
+input[type="text"] {
+    width: 20rem;
+    padding: .2rem;
+    margin: 1rem 1rem 1rem 0rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+/* fieldsets, submit button, and labels within namefields */
+.namefield label, fieldset, input[type="submit"] {
+    margin: 1rem;
+}
+
+/* evenly space text inputs and their labels */
+.namefield {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* evenly space radio and check boxes within fieldset */
+fieldset {
+    border: 1px solid var(--grayblue);
+    border-radius: 3px;
+    max-width: 26rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* phone screens under 680 px */
+@media screen and (max-width: 680px) {
+
+    body {
+
+        /* remove background image */
+        background-image: none;
+        background-color: var(--ginger);
+
+        /* center the content */
+        justify-content: center;
+    }
+    main {
+        margin: auto;
+        max-width: 100%;
+    }
+
+}

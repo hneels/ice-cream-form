@@ -1,0 +1,85 @@
+<!--
+CS601 Assignment 4
+Author: Hope Asher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts.js" defer></script>
+    <title>Ice Cream Form</title>
+</head>
+
+<body>
+    <main>
+        <h1>Ice Cream Form</h1>
+        <form name="icecreamform" action="https://bucs601.com/submit.php" method="post">
+            <div class="namefield">
+                <label for="firstName">First name: </label>
+                <input type="text" name="firstName" id="firstName" class="invalid" required autofocus>
+            </div>
+            <div class="namefield">
+                <label for="lastName">Last name: </label>
+                <input type="text" name="lastName" id="lastName" class="invalid" required>
+            </div>
+            <div class="namefield">
+                <label for="facilitator">Facilitator: </label>
+                <input type="text" name="facilitator" id="facilitator" class="invalid" required>
+            </div>
+
+            <!--to place alert about incorrect facilitator-->
+            <!--(feedback about name length is shown with disabled submit button and input highlight color)-->
+            <div id="warning"></div>
+
+            <fieldset>
+                <legend>Flavor</legend>
+                <div class="flavorchoice">
+                    <input type="radio" name="flavor" value="chocolate" id="chocolate" checked>
+                    <label for="chocolate">Chocolate</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="radio" name="flavor" value="vanilla" id="vanilla">
+                    <label for="vanilla">Vanilla</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="radio" name="flavor" value="pistachio" id="pistachio">
+                    <label for="pistachio">Pistachio</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="radio" name="flavor" value="strawberry" id="strawberry">
+                    <label for="strawberry">Strawberry</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Toppings</legend>
+                <div class="flavorchoice">
+                    <input type="checkbox" name="toffee" value="toffee" id="toffee">
+                    <label for="toffee">Toffee</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="checkbox" name="sprinkles" value="sprinkles" id="sprinkles">
+                    <label for="sprinkles">Sprinkles</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="checkbox" name="marshmallow" value="marshmallow" id="marshmallow">
+                    <label for="marshmallow">Marshmallow</label>
+                </div>
+                <div class="flavorchoice">
+                    <input type="checkbox" name="fudge" value="fudge" id="fudge">
+                    <label for="fudge">Fudge</label>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+
+</body>
+
+</html>
