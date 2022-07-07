@@ -1,6 +1,6 @@
 # Ice Cream Form
 
-*This project was an assignment for BU MET CS601 and copying any portion of it is a violation of Boston University's Academic Conduct Code.*
+*This project was an assignment for CS601. Copying any portion and submitting it as your own work is a violation of Boston University's Academic Conduct Code.*
 
 <img src="screenshot.png" alt="screenshot of Ice Cream Form" width="600px">
 
