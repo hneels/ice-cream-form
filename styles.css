@@ -1,6 +1,6 @@
 /*
 CS601 Assignment 4
-Author: Hope Asher
+Author: Hope Neels
 */
 
 /* color palette */
@@ -38,7 +38,8 @@ main {
 }
 
 /* heading and validation error message */
-h1, #warning {
+h1,
+#warning {
     color: var(--red);
     margin: 1rem;
 }
@@ -63,7 +64,9 @@ input[type="text"] {
 }
 
 /* fieldsets, submit button, and labels within namefields */
-.namefield label, fieldset, input[type="submit"] {
+.namefield label,
+fieldset,
+input[type="submit"] {
     margin: 1rem;
 }
 
@@ -96,6 +99,7 @@ fieldset {
         /* center the content */
         justify-content: center;
     }
+
     main {
         margin: auto;
         max-width: 100%;

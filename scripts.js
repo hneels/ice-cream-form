@@ -1,6 +1,6 @@
 /* 
 CS601 Assignment 4
-Author: Hope Asher
+Author: Hope Neels
 */
 
 // HTML elements repeatedly used within functions below
